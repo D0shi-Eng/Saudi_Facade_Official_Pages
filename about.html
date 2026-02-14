@@ -1,27 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<title>عن التطبيق</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>عن التطبيق — الواجهة السعودية</title>
+  <meta name="description" content="نبذة رسمية عن تطبيق الواجهة السعودية." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
-<div class="nav">
-  <a href="index.html">الرئيسية</a>
+<header class="topbar">
+  <nav class="nav">
+    <a class="brand" href="./index.html">
+      <img src="assets/logo.svg" alt="Saudi Facade" />
+      <div class="title">
+        <b>الواجهة السعودية</b>
+        <span>Saudi Facade — Official Pages</span>
+      </div>
+    </a>
+
+    <div class="links">
+      <a href="./index.html">الرئيسية</a>
+      <a class="is-active" href="./about.html">عن التطبيق</a>
+      <a href="./history.html">تاريخ السعودية</a>
+      <a href="./privacy.html">سياسة الخصوصية</a>
+      <a href="./terms.html">شروط الاستخدام</a>
+    </div>
+  </nav>
+</header>
+
+<div class="wrap">
+  <main class="container page">
+    <div class="pageHeader">
+      <h1>عن التطبيق</h1>
+      <div class="meta">وثيقة رسمية — Saudi Facade</div>
+    </div>
+
+    <div class="section">
+      <h3>رؤيتنا</h3>
+      <p style="margin:0;color:var(--muted);line-height:1.95;font-size:14px;">
+        <b>الواجهة السعودية</b> تطبيق سياحي يقدّم تجربة استكشاف مميّزة داخل المملكة العربية السعودية،
+        عبر محتوى منسّق يعرض المدن والمعالم والفعاليات بطريقة عملية وأنيقة.
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>ماذا يقدم التطبيق؟</h3>
+      <ul>
+        <li>تصفّح المدن وتجاربها ومعالمها.</li>
+        <li>متابعة الفعاليات والأنشطة الترفيهية (صور/فيديو حسب المتاح).</li>
+        <li>واجهات عربية/إنجليزية وتجربة استخدام مريحة.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>التواصل والدعم</h3>
+      <ul>
+        <li>البريد: <a href="mailto:contact@saudifacade.com" style="color:rgba(214,181,107,.95);">contact@saudifacade.com</a></li>
+        <li>هذه الصفحات مخصصة لمتطلبات المتاجر وربطها داخل التطبيق.</li>
+      </ul>
+    </div>
+
+    <hr class="hr" />
+
+    <div class="footer">
+      <div>© <span id="y"></span> Saudi Facade</div>
+      <div><span class="kbd">Tip</span> استخدم نفس الروابط داخل التطبيق (WebView / url_launcher).</div>
+    </div>
+  </main>
 </div>
 
-<div class="container">
-  <h1>عن التطبيق</h1>
-  <p>
-  الواجهة السعودية هو دليل سياحي شامل يهدف إلى تقديم تجربة استكشاف متكاملة
-  للمدن والمعالم والفعاليات داخل المملكة العربية السعودية.
-  </p>
-</div>
-
-<div class="footer">
-contact@saudifacade.com
-</div>
-
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

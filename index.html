@@ -1,30 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>الواجهة السعودية</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الواجهة السعودية — الصفحات الرسمية</title>
+  <meta name="description" content="الصفحات الرسمية لتطبيق الواجهة السعودية: عن التطبيق، تاريخ السعودية، سياسة الخصوصية، شروط الاستخدام." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
-
 <body>
 
-<nav>
-  <a href="index.html">عن التطبيق</a>
-  <a href="history.html">تاريخ السعودية</a>
-  <a href="privacy.html">سياسة الخصوصية</a>
-  <a href="terms.html">شروط الاستخدام</a>
-</nav>
+<header class="topbar">
+  <nav class="nav">
+    <a class="brand" href="./index.html" aria-label="العودة للصفحة الرئيسية">
+      <img src="assets/logo.svg" alt="Saudi Facade" />
+      <div class="title">
+        <b>الواجهة السعودية</b>
+        <span>Saudi Facade — Official Pages</span>
+      </div>
+    </a>
 
-<div class="container">
-  <h1>الواجهة السعودية</h1>
-  <p>الصفحات الرسمية لتطبيق الواجهة السعودية.</p>
-  <p>منصة رقمية تهدف إلى إبراز جمال المملكة العربية السعودية وثقافتها وتاريخها.</p>
+    <div class="links">
+      <a class="is-active" href="./index.html">الرئيسية</a>
+      <a href="./about.html">عن التطبيق</a>
+      <a href="./history.html">تاريخ السعودية</a>
+      <a href="./privacy.html">سياسة الخصوصية</a>
+      <a href="./terms.html">شروط الاستخدام</a>
+    </div>
+  </nav>
+</header>
+
+<div class="wrap">
+  <main class="container">
+    <section class="hero">
+      <div class="heroCard">
+        <div class="heroInner">
+          <div>
+            <h1 class="hTitle">مرجعك الرسمي — بهوية فخمة تليق بالمملكة</h1>
+            <p class="hSub">
+              هذه الصفحات مخصّصة للنشر العام ومتطلبات المتاجر. هنا تجد الوثائق الرسمية لتطبيق
+              <b>الواجهة السعودية</b> بشكل واضح ومصمّم باحتراف.
+            </p>
+
+            <div class="badges">
+              <span class="badge">هوية داكنة زيتية</span>
+              <span class="badge">RTL كامل</span>
+              <span class="badge">مناسب للجوال والويب</span>
+              <span class="badge">روابط ثابتة للتطبيق</span>
+            </div>
+          </div>
+
+          <aside class="ctaBox">
+            <h3>روابط سريعة</h3>
+            <div class="cta">
+              <a class="btn" href="./privacy.html"><b>سياسة الخصوصية</b><span>Privacy Policy</span></a>
+              <a class="btn" href="./terms.html"><b>شروط الاستخدام</b><span>Terms of Use</span></a>
+              <a class="btn" href="./about.html"><b>عن التطبيق</b><span>About</span></a>
+              <a class="btn" href="./history.html"><b>تاريخ السعودية</b><span>History</span></a>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h2>عن التطبيق</h2>
+          <p>نبذة رسمية عن رؤية التطبيق وما يقدمه للمستخدمين، مع معلومات تواصل واضحة.</p>
+        </div>
+        <div class="card">
+          <h2>تاريخ السعودية</h2>
+          <p>محتوى موجز ومحترم يعكس الجذور والامتداد، بصياغة سهلة القراءة ومهيّأة للعرض.</p>
+        </div>
+        <div class="card">
+          <h2>الخصوصية والشروط</h2>
+          <p>سياسات واضحة بصياغة مهنية لتوافق متطلبات Google Play و App Store.</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>© <span id="y"></span> Saudi Facade — All rights reserved.</div>
+        <div>للدعم: <a href="mailto:contact@saudifacade.com">contact@saudifacade.com</a></div>
+      </div>
+    </section>
+  </main>
 </div>
 
-<footer>
-  Saudi Facade 2026 ©
-</footer>
-
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

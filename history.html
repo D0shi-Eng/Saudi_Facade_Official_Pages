@@ -1,50 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>تاريخ السعودية | الواجهة السعودية</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>تاريخ السعودية — الواجهة السعودية</title>
+  <meta name="description" content="صفحة موجزة عن تاريخ المملكة العربية السعودية." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
-  <div class="container">
-    <h1>تاريخ المملكة العربية السعودية</h1>
+<header class="topbar">
+  <nav class="nav">
+    <a class="brand" href="./index.html">
+      <img src="assets/logo.svg" alt="Saudi Facade" />
+      <div class="title">
+        <b>الواجهة السعودية</b>
+        <span>Saudi Facade — Official Pages</span>
+      </div>
+    </a>
 
-    <p>
-      تمتد جذور المملكة العربية السعودية عبر قرون من التاريخ العريق،
-      حيث قامت على أسس الوحدة والاستقرار وبناء مجتمع متماسك يستمد
-      قوته من قيمه وهويته الإسلامية والعربية.
-    </p>
+    <div class="links">
+      <a href="./index.html">الرئيسية</a>
+      <a href="./about.html">عن التطبيق</a>
+      <a class="is-active" href="./history.html">تاريخ السعودية</a>
+      <a href="./privacy.html">سياسة الخصوصية</a>
+      <a href="./terms.html">شروط الاستخدام</a>
+    </div>
+  </nav>
+</header>
 
-    <h2>الدولة السعودية الأولى</h2>
-    <p>
-      انطلقت من الدرعية لتؤسس نواة الدولة الحديثة، 
-      وترسخ مفاهيم الوحدة والاستقرار في شبه الجزيرة العربية.
-    </p>
+<div class="wrap">
+  <main class="container page">
+    <div class="pageHeader">
+      <h1>تاريخ المملكة العربية السعودية</h1>
+      <div class="meta">محتوى موجز — قابل للتحديث</div>
+    </div>
 
-    <h2>الدولة السعودية الثانية</h2>
-    <p>
-      أعادت بناء الدولة واستمرار مسيرتها رغم التحديات،
-      مؤكدةً على عمق الجذور السياسية والاجتماعية للدولة.
-    </p>
+    <div class="section">
+      <h3>ملامح عامة</h3>
+      <p style="margin:0;color:var(--muted);line-height:1.95;font-size:14px;">
+        تمتد جذور الدولة في الجزيرة العربية عبر مراحل تاريخية متعاقبة، قامت على الاستقرار وبناء المجتمع،
+        وصولًا إلى المملكة الحديثة وما تشهده من نهضة شاملة.
+      </p>
+    </div>
 
-    <h2>المملكة العربية السعودية</h2>
-    <p>
-      توحدت البلاد على يد الملك عبدالعزيز بن عبدالرحمن آل سعود،
-      لتبدأ مرحلة جديدة من التنمية والنهضة الشاملة.
-    </p>
+    <div class="section">
+      <h3>الدولة السعودية الأولى</h3>
+      <ul>
+        <li>انطلقت من الدرعية كنواة للدولة الحديثة، وأسست مسارًا سياسيًا واجتماعيًا مؤثرًا في المنطقة.</li>
+      </ul>
+    </div>
 
-    <h2>رؤية مستقبلية</h2>
-    <p>
-      تسير المملكة اليوم بخطى واثقة نحو مستقبل واعد،
-      عبر رؤية تنموية شاملة تركز على الاقتصاد،
-      الثقافة، السياحة، والابتكار.
-    </p>
+    <div class="section">
+      <h3>الدولة السعودية الثانية</h3>
+      <ul>
+        <li>واصلت حضورها رغم التحديات، مؤكدة عمق الجذور واستمرارية بناء الدولة.</li>
+      </ul>
+    </div>
 
-    <br />
-    <a href="index.html" class="button">العودة للرئيسية</a>
-  </div>
+    <div class="section">
+      <h3>المملكة العربية السعودية</h3>
+      <ul>
+        <li>توحدت البلاد على يد الملك عبدالعزيز، لتبدأ مرحلة دولة حديثة بمؤسسات وتنمية متدرّجة.</li>
+      </ul>
+    </div>
 
+    <div class="section">
+      <h3>رؤية مستقبلية</h3>
+      <ul>
+        <li>تسير المملكة اليوم نحو مستقبل واعد عبر برامج تطوير تركز على الاقتصاد والسياحة والثقافة والابتكار.</li>
+      </ul>
+    </div>
+
+    <hr class="hr" />
+
+    <div class="footer">
+      <div>© <span id="y"></span> Saudi Facade</div>
+      <div>للتواصل: <a href="mailto:contact@saudifacade.com">contact@saudifacade.com</a></div>
+    </div>
+  </main>
+</div>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
