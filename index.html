@@ -2,91 +2,128 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#081A12" />
   <title>الواجهة السعودية — الصفحات الرسمية</title>
-  <meta name="description" content="الصفحات الرسمية لتطبيق الواجهة السعودية: عن التطبيق، تاريخ السعودية، سياسة الخصوصية، شروط الاستخدام." />
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
 
 <header class="topbar">
-  <nav class="nav">
-    <a class="brand" href="./index.html" aria-label="العودة للصفحة الرئيسية">
-      <img src="assets/logo.svg" alt="Saudi Facade" />
-      <div class="title">
+  <div class="container topbar-inner">
+    <div class="brand">
+      <div class="brand-badge" aria-hidden="true">⌂</div>
+      <div class="brand-title">
         <b>الواجهة السعودية</b>
         <span>Saudi Facade — Official Pages</span>
       </div>
-    </a>
-
-    <div class="links">
-      <a class="is-active" href="./index.html">الرئيسية</a>
-      <a href="./about.html">عن التطبيق</a>
-      <a href="./history.html">تاريخ السعودية</a>
-      <a href="./privacy.html">سياسة الخصوصية</a>
-      <a href="./terms.html">شروط الاستخدام</a>
     </div>
-  </nav>
+
+    <nav class="nav" aria-label="التنقل">
+      <a class="pill active" href="./index.html">الرئيسية</a>
+      <a class="pill" href="./about.html">عن التطبيق</a>
+      <a class="pill" href="./history.html">تاريخ السعودية</a>
+      <a class="pill" href="./privacy.html">سياسة الخصوصية</a>
+      <a class="pill" href="./terms.html">شروط الاستخدام</a>
+    </nav>
+
+    <a class="homebtn" href="./index.html" title="الرئيسية" aria-label="الرئيسية">⌂</a>
+  </div>
 </header>
 
-<div class="wrap">
-  <main class="container">
-    <section class="hero">
-      <div class="heroCard">
-        <div class="heroInner">
-          <div>
-            <h1 class="hTitle">مرجعك الرسمي — بهوية فخمة تليق بالمملكة</h1>
-            <p class="hSub">
-              هذه الصفحات مخصّصة للنشر العام ومتطلبات المتاجر. هنا تجد الوثائق الرسمية لتطبيق
-              <b>الواجهة السعودية</b> بشكل واضح ومصمّم باحتراف.
-            </p>
+<main class="hero">
+  <div class="container">
+    <section class="panel">
+      <div class="panel-inner">
+        <aside class="sidebox">
+          <h3>روابط سريعة</h3>
+          <div class="quicklinks">
+            <a class="qitem" href="./privacy.html">
+              <div>
+                <b>سياسة الخصوصية</b><br/>
+                <small>ماذا نجمع ولماذا وكيف نحمي بياناتك</small>
+              </div>
+              <span aria-hidden="true">←</span>
+            </a>
 
-            <div class="badges">
-              <span class="badge">هوية داكنة زيتية</span>
-              <span class="badge">RTL كامل</span>
-              <span class="badge">مناسب للجوال والويب</span>
-              <span class="badge">روابط ثابتة للتطبيق</span>
-            </div>
+            <a class="qitem" href="./terms.html">
+              <div>
+                <b>شروط الاستخدام</b><br/>
+                <small>قواعد الاستخدام وحدود المسؤولية</small>
+              </div>
+              <span aria-hidden="true">←</span>
+            </a>
+
+            <a class="qitem" href="./about.html">
+              <div>
+                <b>عن التطبيق</b><br/>
+                <small>هوية التطبيق وما الذي يقدّمه</small>
+              </div>
+              <span aria-hidden="true">←</span>
+            </a>
+
+            <a class="qitem" href="./history.html">
+              <div>
+                <b>تاريخ السعودية</b><br/>
+                <small>ملخص موجز بنبرة راقية</small>
+              </div>
+              <span aria-hidden="true">←</span>
+            </a>
           </div>
+        </aside>
 
-          <aside class="ctaBox">
-            <h3>روابط سريعة</h3>
-            <div class="cta">
-              <a class="btn" href="./privacy.html"><b>سياسة الخصوصية</b><span>Privacy Policy</span></a>
-              <a class="btn" href="./terms.html"><b>شروط الاستخدام</b><span>Terms of Use</span></a>
-              <a class="btn" href="./about.html"><b>عن التطبيق</b><span>About</span></a>
-              <a class="btn" href="./history.html"><b>تاريخ السعودية</b><span>History</span></a>
-            </div>
-          </aside>
+        <div class="big">
+          <div class="kicker">مرجعك الرسمي</div>
+          <h1>هوية فخمة — وروابط ثابتة تلبي متطلبات النشر بالمتاجر</h1>
+          <p>
+            هذه الصفحات هي الوجه الرسمي لتطبيق <b>الواجهة السعودية</b> (Saudi Facade).
+            هنا تجد الوثائق الأساسية بشكل واضح، متناسق، ومُصمّم بهدوء يليق بهوية التطبيق —
+            لتكون جاهزة للربط داخل التطبيق وللمراجعات في Google Play وApp Store.
+          </p>
+
+          <div class="chips" aria-label="مزايا">
+            <span class="chip">هوية داكنة زيتية</span>
+            <span class="chip">RTL كامل</span>
+            <span class="chip">متجاوب للجوال والويب</span>
+            <span class="chip">روابط ثابتة للتطبيق</span>
+          </div>
         </div>
       </div>
 
-      <div class="grid">
+      <div class="grid3" aria-label="أقسام">
         <div class="card">
           <h2>عن التطبيق</h2>
-          <p>نبذة رسمية عن رؤية التطبيق وما يقدمه للمستخدمين، مع معلومات تواصل واضحة.</p>
+          <p>
+            نبذة رسمية مختصرة عن الرؤية: اكتشاف المدن، الثقافة، التاريخ، والفعاليات والترفيه —
+            بصياغة ناعمة وواضحة للمستخدم.
+          </p>
         </div>
+
         <div class="card">
           <h2>تاريخ السعودية</h2>
-          <p>محتوى موجز ومحترم يعكس الجذور والامتداد، بصياغة سهلة القراءة ومهيّأة للعرض.</p>
+          <p>
+            ملخص راقٍ يختصر امتداد الدولة ومراحلها بروحٍ محترمة، مع لمسة مستقبلية تُبرز التحوّل والتنمية.
+          </p>
         </div>
+
         <div class="card">
           <h2>الخصوصية والشروط</h2>
-          <p>سياسات واضحة بصياغة مهنية لتوافق متطلبات Google Play و App Store.</p>
+          <p>
+            وثائق أساسية تُوضّح ما نجمعه من بيانات (عند السماح)، لماذا نستخدمه، وكيف نحميه،
+            إضافةً إلى شروط الاستخدام وحدود المسؤولية.
+          </p>
         </div>
       </div>
-
-      <div class="footer">
-        <div>© <span id="y"></span> Saudi Facade — All rights reserved.</div>
-        <div>للدعم: <a href="mailto:contact@saudifacade.com">contact@saudifacade.com</a></div>
-      </div>
     </section>
-  </main>
-</div>
+  </div>
+</main>
 
-<script>
-  document.getElementById('y').textContent = new Date().getFullYear();
-</script>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>للدعم: <a href="mailto:contact@saudifacade.com">contact@saudifacade.com</a></div>
+    <div>Saudi Facade — All rights reserved © 2026</div>
+  </div>
+</footer>
+
 </body>
 </html>
