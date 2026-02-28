@@ -90,6 +90,35 @@
 
 <script>
   document.getElementById("y").textContent = new Date().getFullYear();
+
+  /* ── Real-time 3D Tilt on Panel ── */
+  const panel = document.querySelector('.panel');
+  if(panel){
+    panel.addEventListener('mousemove', e => {
+      const r = panel.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width  - .5;
+      const y = (e.clientY - r.top)  / r.height - .5;
+      panel.style.transform =
+        `perspective(1200px) rotateY(${x*3}deg) rotateX(${-y*2}deg) translateY(-2px)`;
+    });
+    panel.addEventListener('mouseleave', () => {
+      panel.style.transform = '';
+    });
+  }
+
+  /* ── Real-time 3D Tilt on Sections ── */
+  document.querySelectorAll('.section').forEach(sec => {
+    sec.addEventListener('mousemove', e => {
+      const r = sec.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width  - .5;
+      const y = (e.clientY - r.top)  / r.height - .5;
+      sec.style.transform =
+        `perspective(700px) rotateY(${x*8}deg) rotateX(${-y*6}deg) translateY(-5px) translateX(-4px)`;
+    });
+    sec.addEventListener('mouseleave', () => {
+      sec.style.transform = '';
+    });
+  });
 </script>
 
 </body>

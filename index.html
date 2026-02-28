@@ -90,6 +90,35 @@
 
 <script>
   document.getElementById('y').textContent = new Date().getFullYear();
+
+  /* ── Real-time 3D Tilt on Hero Card ── */
+  const hero = document.querySelector('.heroCard');
+  if(hero){
+    hero.addEventListener('mousemove', e => {
+      const r = hero.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width  - .5;
+      const y = (e.clientY - r.top)  / r.height - .5;
+      hero.style.transform =
+        `perspective(900px) rotateY(${x*6}deg) rotateX(${-y*5}deg) translateY(-4px)`;
+    });
+    hero.addEventListener('mouseleave', () => {
+      hero.style.transform = '';
+    });
+  }
+
+  /* ── Real-time 3D Tilt on Cards ── */
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width  - .5;
+      const y = (e.clientY - r.top)  / r.height - .5;
+      card.style.transform =
+        `perspective(600px) rotateY(${x*10}deg) rotateX(${-y*8}deg) translateY(-10px) scale(1.03)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
 </script>
 </body>
 </html>
